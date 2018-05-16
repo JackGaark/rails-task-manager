@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # CRUD
 
   # # CREATE. Get a form
-  get "tasks/new", to: "tasks#new"
+  get "tasks/new", to: "tasks#new", as: :new_task
 
   # # CREATE a new restaurant
   post "tasks", to: "tasks#create"
